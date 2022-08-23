@@ -2,10 +2,96 @@
 *{
     box-sizing: border-box;
 }
+/*Contiene todo el fondo del blog*/
+.main-header{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url(https://source.unsplash.com/Wd9fzw-Gztc);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Dousis', sans-serif;
+    position: relative;
+}
+.main-nav{
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));      /*Se crea un fodo trasnparente*/
+    height: 60px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+}
+.main-nav{
+    display: flex;
+}
+ul{
+    display: flex;
+    margin-left: auto;
+    margin-right : 100px;
+}
+/*Hacer botones a los enlaces de arriba*/
+ul li a:hover{
+    background: rgba(0, 0, 255, 0.795);
+}
+/*Contiene todo el menu superior izquierdo*/
+ul li a{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+/*Este estilo es para el titulo y historia*/
+.content-header_main{
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 15px 30px;
+}
+
+.content-header_main h1{
+    font-size: 7rem;
+    padding-bottom: 17px;
+}
+/*Formato de las letras del titulo y mas*/
+.content-header_main p{
+    font-size: 1.5rem;
+    margin: 15px 30px;
+
+}
+/*Formato de las letras*/
+.content-header_main a{
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 15px 20px;
+    background: rgba(0, 0, 255, 0.795);
+    color: whitesmoke;
+
+}
+/*BOTON HISTORIA*/
+.content-header a:hover{
+    background: rgba(34, 34, 219, 0.795);
+    border: 2px solid whitesmoke;
+    padding: 13px 18px;
+}
+
+/*AQUI VAN LOS ESTILOS DE LA HISTORIA DE GALAPAGOS*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+*{
+    box-sizing: border-box;
+}
 
 /*Contiene todo el fondo del blog*/
 .fondo{
-    background-image:url(https://source.unsplash.com/kXar5SprW2E);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.63)),url(https://source.unsplash.com/kXar5SprW2E);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,8 +112,11 @@ img{
     max-width: 100%;
     height: auto;
     border-radius: 3px;
-    display: block;
+    display: flex;
     margin: auto;
+}
+.solitario{
+    margin-top: 20px;
 }
 a{
     text-decoration: none;
@@ -48,14 +137,7 @@ a{
 .col:first-child{
     margin-left: 0;
 }
-.span2{
-    width: 50;
-    position: center;
-    background: #8490e9;
-    margin: 0 auto 2em auto;
-    padding:  35px 30px;
-    border-radius: 10px;
-}
+
 .span1{
     width: 50;
     position: center; 
@@ -95,21 +177,21 @@ a{
     padding: 20px;
 }
 .blog{
-    background: #6cc4a1a9;
+    background: #0085ba88;
     margin: 0 auto 2em auto;
     padding:  35px 30px;
     border-radius: 10px;
 }
 .contenido_blog{
-    font-size: .9em;
+    font-size: auto;
     margin-top: 8px;
     margin-bottom: 0;
     text-align: justify;
     display: block;
-    font-family: "Droid Serif", Georgia, Times, serif;
+    font-family: "Droid Serif";
     font-weight: normal;
-    font-style: italic;
     float: none;
+    color: white;
 }
 .titulo_blog{
     font-weight: 500px;
@@ -120,16 +202,15 @@ a{
 .datos{
     font-size: 1em;
     font-weight: 400;
-    color: #0f0f0f;
+    color: white;
     text-decoration: underline;
     text-decoration-color: currentColor;
 }
 .frase{
     text-align: center;
-}
-.frase::second-letter{
-    color: red;
-    font-size: 4em;
+    color: white;
+    font-family:  "Droid Serif";
+
 }
 .imagenes{
     max-width: 30%;
@@ -138,14 +219,15 @@ a{
     margin: 0 10px 10px 0;
     border: 1px solid #999;
     display:inline-flex;
+    
 }
 
 h3{
     display: block;
-    font-family: "Droid Serif", Georgia, Times, serif;
+    font-family: "Droid Serif";
     font-weight: normal;
-    font-style: italic;
     float: none;
+    font-size: 1.7em;
 }
 
 
@@ -154,23 +236,13 @@ h3{
 .Titulo2{
     text-align: center;
     display: block;
-    font-family: "Droid Serif", Georgia, Times, serif;
-    font-style: italic;
+    font-family: "Droid Serif";
     text-decoration: overline;
+    font-size: 3em;
 }
 .contenido_blog1{
     text-align: center;
-}
-.span2{
-    font-size: .9em;
-    margin-top: 8px;
-    margin-bottom: 0;
-    width: 50;
-    position: center;
-    background: #6cc4a1a9;
-    margin: 0 auto 2em auto;
-    padding:  35px 30px;
-    border-radius: 10px;
+    color: white;
 }
 /*Tercera hoja de informacion*/
 .contenedor-video{
@@ -187,17 +259,6 @@ h3{
     height: 100%;
 }
 
-.span3{
-    font-size: .9em;
-    margin-top: 8px;
-    margin-bottom: 0;
-    width: 50;
-    position: center;
-    background: #6cc4a1a9;
-    margin: 0 auto 2em auto;
-    padding:  35px 30px;
-    border-radius: 10px;
-}
 /*Footer*/
 footer{
     width: 100%;
@@ -220,9 +281,10 @@ footer p{
     
 }
 .ICONOARRIBA{
-    float: right;
-}
-.ICONOINICIO{
     float: left;
 }
+.ICONOINICIO{
+    float: right;
+}
 /**/
+
